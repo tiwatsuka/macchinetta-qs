@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-# Macchinetta Quick Start ver 1.1.0 2016.4.5
+# Macchinetta Quick Start ver 1.3.0 2016.10.31
 # 
 # Usage:
 #   macchinetta-qs groupId artifactId version
@@ -17,4 +17,4 @@ if [ $# -ne 3 ]; then
     exit 1
 fi
 
-mvn archetype:generate -B -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-releases -DarchetypeGroupId=org.terasoluna.gfw.blank -DarchetypeArtifactId=terasoluna-gfw-multi-web-blank-mybatis3-archetype -DarchetypeVersion=5.1.0.RELEASE -DgroupId=$1 -DartifactId=$2 -Dversion=$3
+mvn archetype:generate -B -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-releases -DarchetypeGroupId=org.terasoluna.gfw.blank -DarchetypeArtifactId=terasoluna-gfw-multi-web-blank-mybatis3-archetype -DarchetypeVersion=5.2.0.RELEASE -DgroupId=$1 -DartifactId=$2 -Dversion=$3
